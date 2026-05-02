@@ -1,223 +1,225 @@
+![Anime Project](Power%20Point/image.png)
+
 # 📊 Anime Data Science Project
 
-Un proyecto completo de **Análisis Exploratorio de Datos (EDA)** y **Machine Learning** aplicado a un dataset de anime, que incluye análisis estadísticos avanzados como ANOVA, regresión lineal y clustering.
+A complete project of **Exploratory Data Analysis (EDA)** and **Machine Learning** applied to an anime dataset, including advanced statistical analyses such as ANOVA, linear regression, and clustering.
 
 ---
 
-## 📋 Descripción del Proyecto
+## 📋 Project Description
 
-Este proyecto realiza un análisis exhaustivo de datos de anime procedentes de **MyAnimeList**. El objetivo es explorar patrones, relaciones y características de series anime mediante técnicas de análisis estadístico y aprendizaje automático no supervisado.
+This project performs a comprehensive analysis of anime data from **MyAnimeList**. The objective is to explore patterns, relationships, and characteristics of anime series using statistical analysis techniques and unsupervised machine learning.
 
-### Contexto Académico
-Proyecto realizado como parte de la formación en **Ciencia de Datos** que integra:
-- Análisis exploratorio de datos (EDA)
-- Pruebas estadísticas (ANOVA)
-- Regresión lineal
-- Clustering no supervisado
-- Visualización de datos
+### Academic Context
+Project completed as part of **Data Science** training that integrates:
+- Exploratory Data Analysis (EDA)
+- Statistical Tests (ANOVA)
+- Linear Regression
+- Unsupervised Clustering
+- Data Visualization
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## 🗂️ Project Structure
 
 ```
 Anime-Data-Science-Project/
-├── README.md                          # Este archivo
-├── LICENSE                            # Licencia MIT del proyecto
-├── requirements.txt                   # Dependencias del proyecto
+├── README.md                          # This file
+├── LICENSE                            # Project MIT License
+├── requirements.txt                   # Project Dependencies
 ├── Jupyter Notebook/
-│   ├── data.csv                       # Dataset principal de anime
-│   ├── notebook.ipynb                 # EDA: Análisis Exploratorio
-│   ├── anova.ipynb                    # Análisis ANOVA
-│   ├── regresionlineal.ipynb          # Regresión Lineal
-│   └── clustering.ipynb               # Análisis de Clustering
-└── Power Point/                       # Presentaciones del proyecto
+│   ├── data.csv                       # Main anime dataset
+│   ├── notebook.ipynb                 # EDA: Exploratory Analysis
+│   ├── anova.ipynb                    # ANOVA Analysis
+│   ├── regresionlineal.ipynb          # Linear Regression
+│   └── clustering.ipynb               # Clustering Analysis
+└── Power Point/                       # Project Presentations
 ```
 
 ---
 
-## 📁 Descripción de Notebooks
+## 📁 Notebooks Description
 
-### 1. **notebook.ipynb** - Análisis Exploratorio de Datos (EDA)
-**Propósito:** Exploración inicial y comprensión del dataset
+### 1. **notebook.ipynb** - Exploratory Data Analysis (EDA)
+**Purpose:** Initial exploration and understanding of the dataset
 
-**Contenido:**
-- Carga y revisión de la estructura del dataset
-- Estadísticas descriptivas de variables cuantitativas
-- Distribución de variables (Episodes, Duration, Score, etc.)
-- Identificación de valores atípicos (outliers)
-- Análisis de correlaciones
-- Visualizaciones exploratorias
+**Content:**
+- Loading and reviewing dataset structure
+- Descriptive statistics of quantitative variables
+- Distribution of variables (Episodes, Duration, Score, etc.)
+- Identification of outliers
+- Correlation analysis
+- Exploratory visualizations
 
-**Variables analizadas:**
-- Episodes (Número de episodios)
-- Duration_Minutes (Duración en minutos)
-- Score (Puntuación promedio)
-- Scored_Users (Usuarios que puntuaron)
+**Variables analyzed:**
+- Episodes (Number of episodes)
+- Duration_Minutes (Duration in minutes)
+- Score (Average score)
+- Scored_Users (Users who rated)
 - Ranked (Ranking)
-- Popularity (Popularidad)
-- Members (Miembros)
+- Popularity (Popularity index)
+- Members (Number of members)
 
-**Herramientas:** `pandas`, `numpy`, `matplotlib`, `seaborn`
-
----
-
-### 2. **anova.ipynb** - Análisis de Varianza (ANOVA)
-**Propósito:** Determinar si existen diferencias estadísticamente significativas en las puntuaciones entre tipos de anime
-
-**Pregunta de Investigación:**
-¿Existen diferencias estadísticamente significativas en la Puntuación entre distintos tipos de anime (TV, Película, OVA, ONA, Especial, etc.)?
-
-**Contenido:**
-- Estadísticas descriptivas por tipo de anime
-- Pruebas de normalidad (Shapiro-Wilk)
-- Pruebas de homogeneidad de varianza (Levene)
-- ANOVA paramétrico (si se cumplen supuestos)
-- Pruebas no paramétricas (Kruskal-Wallis)
-- Análisis post-hoc (comparaciones pareadas)
-- Visualizaciones (boxplots, violinplots)
-
-**Hipótesis:**
-- **H₀:** No hay diferencias en la media de puntuación entre tipos de anime
-- **H₁:** Sí hay diferencias significativas
-
-**Herramientas:** `scipy.stats`, `matplotlib`, `seaborn`
+**Tools:** `pandas`, `numpy`, `matplotlib`, `seaborn`
 
 ---
 
-### 3. **regresionlineal.ipynb** - Análisis de Regresión Lineal
-**Propósito:** Modelar la relación entre variables y predecir puntuaciones
+### 2. **anova.ipynb** - Analysis of Variance (ANOVA)
+**Purpose:** Determine if there are statistically significant differences in scores between anime types
 
-**Contenido:**
-- Selección de variables predictoras
-- Construcción de modelo de regresión lineal
-- Evaluación de supuestos de regresión
-- Interpretación de coeficientes
-- Métricas de bondad de ajuste (R², RMSE, MAE)
-- Análisis de residuos
-- Predicciones
+**Research Question:**
+Are there statistically significant differences in Score between different anime types (TV, Movie, OVA, ONA, Special, etc.)?
 
-**Herramientas:** `scikit-learn`, `scipy`, `matplotlib`
+**Content:**
+- Descriptive statistics by anime type
+- Normality tests (Shapiro-Wilk)
+- Homogeneity of variance tests (Levene)
+- Parametric ANOVA (if assumptions are met)
+- Non-parametric tests (Kruskal-Wallis)
+- Post-hoc analysis (pairwise comparisons)
+- Visualizations (boxplots, violinplots)
+
+**Hypothesis:**
+- **H₀:** No differences in mean score between anime types
+- **H₁:** There are significant differences
+
+**Tools:** `scipy.stats`, `matplotlib`, `seaborn`
 
 ---
 
-### 4. **clustering.ipynb** - Análisis de Clustering K-Means
-**Propósito:** Identificar grupos o patrones naturales en los datos de anime
+### 3. **regresionlineal.ipynb** - Linear Regression Analysis
+**Purpose:** Model the relationship between variables and predict scores
 
-**Metodología:**
-1. **Preprocesamiento:** Limpieza y selección de características
-2. **Normalización:** Escalado de datos (StandardScaler)
-3. **Selección de K:** Método del Codo (Elbow Method)
-4. **Clustering:** Aplicación del algoritmo K-Means
-5. **Visualización:** PCA para reducción a 2D
-6. **Interpretación:** Análisis de centroides
+**Content:**
+- Selection of predictive variables
+- Construction of linear regression model
+- Evaluation of regression assumptions
+- Interpretation of coefficients
+- Goodness of fit metrics (R², RMSE, MAE)
+- Residual analysis
+- Predictions
 
-**Características utilizadas:**
+**Tools:** `scikit-learn`, `scipy`, `matplotlib`
+
+---
+
+### 4. **clustering.ipynb** - K-Means Clustering Analysis
+**Purpose:** Identify groups or natural patterns in anime data
+
+**Methodology:**
+1. **Preprocessing:** Data cleaning and feature selection
+2. **Normalization:** Data scaling (StandardScaler)
+3. **K Selection:** Elbow Method
+4. **Clustering:** Application of K-Means algorithm
+5. **Visualization:** PCA for reduction to 2D
+6. **Interpretation:** Centroid analysis
+
+**Features used:**
 - Episodes
 - Duration
 - Score
 - Popularity
 - Members
 
-**Objetivos identificables:**
-- Éxitos populares (mainstream)
-- Series de nicho
-- Películas
-- Programas de larga duración
+**Identifiable Clusters:**
+- Mainstream hits
+- Niche series
+- Movies
+- Long-running programs
 
-**Herramientas:** `scikit-learn`, `matplotlib`, `seaborn`
+**Tools:** `scikit-learn`, `matplotlib`, `seaborn`
 
 ---
 
 ## 📊 Dataset (data.csv)
 
-**Origen:** MyAnimeList
+**Source:** MyAnimeList
 
-**Características principales:**
-- Type (Tipo de anime: TV, Movie, OVA, ONA, Special, etc.)
-- Episodes (Número de episodios)
-- Duration_Minutes (Duración)
-- Score (Puntuación del usuario)
-- Scored_Users (Cantidad de usuarios que puntuaron)
+**Main Features:**
+- Type (Anime type: TV, Movie, OVA, ONA, Special, etc.)
+- Episodes (Number of episodes)
+- Duration_Minutes (Duration)
+- Score (User score)
+- Scored_Users (Number of users who rated)
 - Ranked (Ranking)
-- Popularity (Índice de popularidad)
-- Members (Cantidad de miembros)
+- Popularity (Popularity index)
+- Members (Number of members)
 
 ---
 
-## 🛠️ Instalación y Configuración
+## 🛠️ Installation and Configuration
 
-### Requisitos previos
-- Python 3.7 o superior
-- pip o conda
+### Prerequisites
+- Python 3.7 or higher
+- pip or conda
 
-### Instalación de dependencias
+### Installing Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Dependencias principales
+### Main Dependencies
 ```
-pandas          # Manipulación de datos
-matplotlib      # Visualización
-seaborn         # Visualización estadística
+pandas          # Data manipulation
+matplotlib      # Visualization
+seaborn         # Statistical visualization
 scikit-learn    # Machine Learning
-ipykernel       # Kernel de Jupyter
-numpy           # Computación numérica
-scipy           # Análisis estadístico
+ipykernel       # Jupyter Kernel
+numpy           # Numerical computation
+scipy           # Statistical analysis
 ```
 
 ---
 
-## 🚀 Cómo ejecutar
+## 🚀 How to Run
 
-### Opción 1: Jupyter Notebook
+### Option 1: Jupyter Notebook
 ```bash
 jupyter notebook
 ```
-Luego abre cualquiera de los archivos `.ipynb` en la carpeta `Jupyter Notebook/`
+Then open any `.ipynb` files in the `Jupyter Notebook/` folder
 
-### Opción 2: JupyterLab
+### Option 2: JupyterLab
 ```bash
 jupyter lab
 ```
 
 ---
 
-## 📈 Resultados y Conclusiones
+## 📈 Results and Conclusions
 
-Este proyecto proporciona insights sobre:
+This project provides insights about:
 
-1. **Características del Dataset de Anime**
-   - Distribución de puntuaciones
-   - Relación entre número de episodios y puntuación
-   - Tendencias de popularidad
+1. **Anime Dataset Characteristics**
+   - Distribution of scores
+   - Relationship between number of episodes and score
+   - Popularity trends
 
-2. **Diferencias por Tipo de Anime**
-   - ANOVA revela si hay diferencias significativas
-   - Comparativas entre TV, Películas, OVAs, etc.
+2. **Differences by Anime Type**
+   - ANOVA reveals if there are significant differences
+   - Comparisons between TV, Movies, OVAs, etc.
 
-3. **Predicción de Puntuaciones**
-   - Regresión lineal identifica factores que influyen
-   - Modelo para estimar puntuaciones
+3. **Score Prediction**
+   - Linear regression identifies influencing factors
+   - Model to estimate scores
 
-4. **Segmentación de Anime**
-   - Clustering agrupa anime en categorías interpretables
-   - Identificación de nichos y tendencias
-
----
-
-## 👨‍💻 Autor
-
-**Darian** - Proyecto de Ciencia de Datos para la Escuela
+4. **Anime Segmentation**
+   - Clustering groups anime into interpretable categories
+   - Identification of niches and trends
 
 ---
 
-## 📝 Licencia
+## 👨‍💻 Author
 
-Este proyecto está bajo la **Licencia MIT (Massachusetts Institute of Technology)**.
-**Detalles completos en:** [LICENSE](LICENSE)
+**Darian** - Data Science School Project
+
+---
+
+## 📝 License
+
+This project is under the **MIT License (Massachusetts Institute of Technology)**.
+**Full details in:** [LICENSE](LICENSE)
 
 
 ---
